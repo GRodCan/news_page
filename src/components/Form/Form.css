@@ -1,0 +1,18 @@
+.form_form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+}
+.form_form label, .form_form input{
+    font-size: 1.5rem;
+}
+main h2{
+    font-size: 2.3rem;
+}
+
+#abstract{
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 30rem;
+}

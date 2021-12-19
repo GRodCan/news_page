@@ -1,0 +1,9 @@
+.home_form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+}
+.home_form label, .home_form input{
+    font-size: 1.5rem;
+}

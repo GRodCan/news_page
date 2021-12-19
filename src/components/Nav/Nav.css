@@ -1,0 +1,15 @@
+.ul_Nav{
+    list-style: none;
+}
+.li_Nav{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 4rem;
+    text-decoration: none;
+}
+.li_Nav a{
+    color: black;
+    text-decoration: none;
+}

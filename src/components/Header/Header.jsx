@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../Nav";
+import "./Header.css"
 
 import { userContext } from "../../context/userContext";
 
@@ -7,19 +8,19 @@ class Header extends Component {
 
 
   render() {
-    return <header>
-      <h1>K'AppAsao</h1>
-      <Nav/>
+    return (<header className="header">
+      <img src="https://cdn-icons-png.flaticon.com/512/21/21601.png" alt="Logo noticias" className="logo" />
+      <h1 className="title">TechNews</h1>
       <userContext.Consumer>
                 {
                   
-                ({user, logout})=>user()!==""?<>
-                <h2>Bienvenido {user()}, disfruta de nuestros servicios</h2>
-                <button onClick={logout}>Logout</button>
-                </>:null}
+                  ({user, logout})=>user()!==""?
+                <p className="user">Disfruta de nuestros servicios {user()}.</p>
+                :null}
                 
                 </userContext.Consumer>
-    </header>;
+      <Nav/>
+    </header>);
   }
 }
 

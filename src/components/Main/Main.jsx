@@ -3,6 +3,7 @@ import Home from "../Home"
 import Form from "../Form"
 import List from "../List"
 import axios from "axios";
+import "./Main.css"
 
 
 import {Routes, Route} from 'react-router-dom';
@@ -17,8 +18,8 @@ class Main extends Component {
        
     }
   }
-  async componentDidMount(){
-    
+
+  async componentDidMount(){    
     const resp = await axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=technology&api-key=nKcAIBF4NK4Eh60PGN91ITDcGg13EFCw`);
     const data = resp.data;
     let allNews= data.response.docs;
@@ -33,7 +34,7 @@ class Main extends Component {
     let current_news=this.state.listNews.concat(_new)
     this.setState({
       listNews: current_news
-  });
+  })
   }
 
   deleteNew = i => {

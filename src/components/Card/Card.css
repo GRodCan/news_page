@@ -1,0 +1,24 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 1rem;
+    padding: 0rem 1rem;
+    background-color: rgba(79, 73, 83, 0.3);
+    
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card h3{
+    font-size: 1.5rem;
+}
+.card p{
+    font-size: 1.2rem;
+}
